@@ -1,0 +1,9 @@
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\bin\Debug\SharepointEmptyList.exe.config
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\bin\Debug\SharepointEmptyList.exe
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\bin\Debug\SharepointEmptyList.pdb
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.csprojResolveAssemblyReference.cache
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.Properties.Resources.resources
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.SharepointForm.resources
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.csproj.GenerateResource.Cache
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.exe
+C:\Users\Bob-Haddow\Documents\Visual Studio 2013\Projects\BT Notes\trunk\Sharepoint Empty List\SharepointEmptyList\obj\Debug\SharepointEmptyList.pdb

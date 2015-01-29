@@ -16,7 +16,7 @@ namespace SharepointEmptyList
             toolStripStatusLabel.Visible = false;
         }
 
-        private int SharepointItemCount(string url, string list)
+        private static int SharepointItemCount(string url, string list)
         {
             try
             {
@@ -93,7 +93,6 @@ namespace SharepointEmptyList
             Cursor.Current = Cursors.WaitCursor;
 
             labelSharepointItemsCount.Visible = true;
-
             int count = SharepointItemCount(textBoxURL.Text, textBoxListName.Text);
             labelSharepointItemsCount.Text = count.ToString(CultureInfo.InvariantCulture);
 
@@ -105,7 +104,6 @@ namespace SharepointEmptyList
             Cursor.Current = Cursors.WaitCursor;
 
             toolStripStatusLabel.Visible = true;
-
             string success = SharepointItemDelete(textBoxURL.Text, textBoxListName.Text);
             toolStripStatusLabel.Text = success;
 

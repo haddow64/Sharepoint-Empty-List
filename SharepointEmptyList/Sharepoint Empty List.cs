@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Windows.Forms;
 using Microsoft.SharePoint.Client;
 using Form = System.Windows.Forms.Form;
@@ -21,7 +20,7 @@ namespace SharepointEmptyList
             try
             {
                 var clientContext = new ClientContext(url);
-                List oList = clientContext.Web.Lists.GetByTitle(list);
+                var oList = clientContext.Web.Lists.GetByTitle(list);
                 clientContext.Load(oList);
                 clientContext.ExecuteQuery();
                 var count = oList.ItemCount;
@@ -40,7 +39,7 @@ namespace SharepointEmptyList
             try
             {
                 var clientContext = new ClientContext(url);
-                List oList = clientContext.Web.Lists.GetByTitle(list);
+                var oList = clientContext.Web.Lists.GetByTitle(list);
 
                 var daysToDelete = numericUpDownDaysToDelete.Value*-1;
 
@@ -50,7 +49,7 @@ namespace SharepointEmptyList
                         daysToDelete + " /></Value></Neq></Where></Query></View>"
                 };
 
-                ListItemCollection listItems = oList.GetItems(camlQuery);
+                var listItems = oList.GetItems(camlQuery);
 
                 clientContext.Load(listItems,
                     eachItem => eachItem.Include(
@@ -58,7 +57,7 @@ namespace SharepointEmptyList
                         item => item["ID"]));
                 clientContext.ExecuteQuery();
 
-                int totalListItems = listItems.Count;
+                var totalListItems = listItems.Count;
 
                 toolStripStatusLabel.Text = string.Format("Deletion in {0}list:", list);
 
@@ -93,8 +92,8 @@ namespace SharepointEmptyList
             Cursor.Current = Cursors.WaitCursor;
 
             labelSharepointItemsCount.Visible = true;
-            int count = SharepointItemCount(textBoxURL.Text, textBoxListName.Text);
-            labelSharepointItemsCount.Text = count.ToString(CultureInfo.InvariantCulture);
+            var count = SharepointItemCount(textBoxURL.Text, textBoxListName.Text);
+            labelSharepointItemsCount.Text = count.ToString(System.Globalization.CultureInfo.InvariantCulture);
 
             Cursor.Current = Cursors.Default;
         }
@@ -104,7 +103,7 @@ namespace SharepointEmptyList
             Cursor.Current = Cursors.WaitCursor;
 
             toolStripStatusLabel.Visible = true;
-            string success = SharepointItemDelete(textBoxURL.Text, textBoxListName.Text);
+            var success = SharepointItemDelete(textBoxURL.Text, textBoxListName.Text);
             toolStripStatusLabel.Text = success;
 
             Cursor.Current = Cursors.Default;

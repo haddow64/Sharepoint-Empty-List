@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent( )
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SharepointForm));
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(SharepointForm));
             this.labelURL = new System.Windows.Forms.Label();
             this.textBoxURL = new System.Windows.Forms.TextBox();
             this.labelListName = new System.Windows.Forms.Label();
